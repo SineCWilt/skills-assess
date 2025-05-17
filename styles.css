@@ -24,7 +24,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Equivalent to background-size: cover */
+    object-fit: cover; 
     z-index: -1;
   }
 
@@ -42,7 +42,7 @@ body {
   .hero-text {
     position: relative;
     z-index: 1;
-    padding: 145px 20px 0; /* 👈 Now the text gets the spacing */
+    padding: 145px 20px 0; 
   }
   
   .hero-text h1 {
@@ -123,7 +123,7 @@ body {
     /* margin-top: 237px; */
   }
 
-  .content-section {
+  /* .content-section {
     outline: 2px dashed red;
   }
   
@@ -133,7 +133,7 @@ body {
   
   .text-block {
     outline: 2px dashed blue;
-  } 
+  }  */
   
 .splash {
     /* outline: 2px dashed purple; */
@@ -202,7 +202,7 @@ body {
         flex-wrap: nowrap;
         padding-left: 0;
         margin-left: 0;
-        width: 50%; /* or adjust based on layout needs */
+        width: 50%; 
       }
 
   .image-grid {
@@ -311,7 +311,7 @@ body {
         flex-wrap: nowrap;
         padding-left: 0;
         margin-left: 0;
-        width: 50%; /* or adjust based on layout needs */
+        width: 50%; 
         margin-top: 60px;
       }
 
