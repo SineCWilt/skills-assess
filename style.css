@@ -26,6 +26,7 @@ body {
     text-align: center;
     position: relative;
     border-bottom: 32px solid #de041c;
+    width: 100vw;
   }
   
   .hero-text h1 {
@@ -245,6 +246,67 @@ body {
         height: auto;
         margin-left: 189px;
         margin-top: -535px;
+        opacity: 0.1;
+        z-index: -1;
+    }
+  }
+
+  @media screen and (max-width: 768px){
+
+    .video-section {
+        background: white;
+        padding: 150px;
+        text-align: center;
+        z-index: 100;
+        margin: -325px auto -435px auto;
+        width: 84%;
+        height: 30%;
+        justify-items: center;
+      }
+
+      .collage-wrapper {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: nowrap;
+        padding-left: 0;
+        margin-left: 0;
+        width: 50%;
+        margin-top: 166px;
+      }
+
+    .img-a { grid-area: a; object-fit: cover; width: 134%; height: 56%; margin-top: 7px;}
+    .img-b { grid-area: b; object-fit: cover; width: 118%; height: 556%; margin-top: -67px; }
+    .img-c { grid-area: c; object-fit: cover; width: 143%; height: 556%; margin-top: -67px; margin-left: 10px;}
+
+    #side-img-1{
+        width: 74%;
+        height: 43%;
+        margin-top: 75px;
+        margin-left: 50px;
+        object-fit: cover;
+      }
+    
+    #side-img-2{
+        height: 22%;
+        width: 48%;
+        margin-left: 50px;
+        margin-top: -2px;
+      }
+
+      .text-block {
+        width: 50%;
+        padding: 0;
+        flex-shrink: 0; /* Prevents it from squishing too much */
+        /* margin-top: 417px; */
+      }
+
+    .splash {
+        outline: 2px dashed purple;
+        width: 100%;
+        height: auto;
+        margin-left: 1px;
+        margin-top: -361px;
         opacity: 0.1;
         z-index: -1;
     }
