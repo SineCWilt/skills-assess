@@ -1,0 +1,244 @@
+
+* {
+    box-sizing: border-box;
+  }
+
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background: #fff;
+    color: #000;
+  }
+  
+  .hero {
+    background: url('HERO 1.jpg') center/cover no-repeat;
+    color: white;
+    padding: 145px 20px;
+    text-align: center;
+    position: relative;
+    border-bottom: 32px solid #de041c;
+  }
+  
+  .hero-text h1 {
+    font-size: 38px;
+    font-weight: 900;
+    line-height: 0.8;
+    letter-spacing: -1px;
+  }
+  
+  .hero-text .red {
+    font-size: 64px;
+    letter-spacing: -2px;
+    color: #de041c;
+  }
+  
+  .hero-text .white {
+    color: white;
+  }
+
+ .hero-text p {
+    font-size: 10px;
+ }
+  
+  .video-section {
+    background: white;
+    padding: 150px;
+    text-align: center;
+    z-index: 100;
+    margin: -325px auto -435px auto;
+    width: 50%;
+    height: 30%;
+    justify-items: center;
+  }
+  
+  .video-container {
+    position: relative;
+    margin: 50px auto;
+    padding-top: 56.25%; /* 16:9 ratio */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* strong shadow */;
+  }
+  
+  .video-container iframe {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  
+  .content-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+    gap: 30px; /* give the collage and text space between */
+  }
+  
+  /* Image collage */
+  .image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas:
+      "a a a"
+      "a a a"
+      "a a a"
+      "a a a"
+      "b c c"
+      "b c c";
+    gap: 5px;
+    position: relative;
+    width: 100%;
+    max-width: none;
+    padding: 0;
+  }
+  
+  .img-a { grid-area: a; object-fit: cover; width: 127%; height: 72%; }
+  .img-b { grid-area: b; object-fit: cover; width: 97%; height: 146%; margin-top: -119px; }
+  .img-c { grid-area: c; object-fit: cover; width: 141%; height: 194%; margin-top: -119px; }
+
+  
+  .image-grid img {
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+    display: block;
+  }
+
+#grid-2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    max-width: 100%;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+}
+
+#side-img-1{
+    width: 73%;
+    height: 31%;
+    margin-top: 245px;
+    margin-left: 130px;
+    object-fit: cover;
+  }
+
+#side-img-2{
+    height: 18%;
+    width: 40%;
+    margin-left: 130px;
+    margin-top: -84px;
+    /* object-fit:fit-content; */
+  }
+
+  .collage-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: nowrap;
+    padding-left: 0;
+    margin-left: 0;
+    width: 50%; /* or adjust based on layout needs */
+  }
+  
+  /* .image-grid,
+  #grid-2 {
+    /* flex: 1; */
+  } */
+  
+  #grid-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /* #grid-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: fit-content; /* ✅ key fix: shrink-wraps to content */
+    /* flex: 0 0 auto;      /* ✅ prevents flex-grow from stretching it */
+    /* padding: 0; */
+    /* margin: 0; */
+  /* } */ 
+  
+  /* #side-img-1, #side-img-2 {
+    width: 65%;
+    object-fit: cover;
+  } */
+  
+
+
+/* Text Block */
+  /* .text-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    width: 50%;
+  } */ 
+
+  .text-block {
+    width: 50%;
+    padding: 0;
+    flex-shrink: 0; /* Prevents it from squishing too much */
+    margin-top: 281px;
+  }
+  .collage-wrapper,
+.text-block {
+  margin: 0;
+  padding: 0;
+}
+
+  .content-section {
+    outline: 2px dashed red;
+  }
+  
+  .collage-wrapper {
+    outline: 2px dashed green;
+  }
+  
+  .text-block {
+    outline: 2px dashed blue;
+  } 
+  
+
+
+  
+  .text-block h2 {
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+  .text-block p {
+    font-size: 8px;
+    line-height: 1.3;
+  }
+
+.heading {
+    border-bottom: solid 2px black;
+}
+  
+  .highlight {
+    color: #de041c;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 0.6;
+  }
+  
+  .red-text {
+    color: #de041c;
+    font-weight: 700;
+  }
+  
