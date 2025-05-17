@@ -18,15 +18,31 @@ body {
     color: #000;
   }
   
+  .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Equivalent to background-size: cover */
+    z-index: -1;
+  }
+
   .hero {
-    background: url('HERO 1.jpg') center/cover no-repeat;
+    /* background: url('HERO 1.jpg') center/cover no-repeat; */
     color: white;
-    padding: 145px 20px;
+    /* padding: 145px 20px; */
     text-align: center;
     position: relative;
     border-bottom: 32px solid #de041c;
     width: 100vw;
     height: 58vh;
+  }
+
+  .hero-text {
+    position: relative;
+    z-index: 1;
+    padding: 145px 20px 0; /* 👈 Now the text gets the spacing */
   }
   
   .hero-text h1 {
@@ -51,7 +67,7 @@ body {
  }
   
   .video-section {
-    background: white;
+    /* background: transparent; */
     padding: 10px;
     text-align: center;
     z-index: 100;
@@ -159,7 +175,6 @@ body {
   
   @media screen and (min-width: 768px) and (max-width: 1439px){
     .video-section {
-        background: white;
         padding: 10px;
         text-align: center;
         z-index: 100;
@@ -269,7 +284,6 @@ body {
         margin-top: -50px;
     }
     .video-section {
-        background: white;
         padding: 10px;
         text-align: center;
         z-index: 100;
