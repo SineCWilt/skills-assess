@@ -206,7 +206,7 @@ body {
         width: 50%;
         padding: 0;
         flex-shrink: 0; 
-        margin-top: 375px;
+        margin-top: 403px;
       }
 
   .splash {
@@ -223,6 +223,23 @@ body {
 
   @media screen and (min-width: 1920px) {
    
+    .hero-text h1 {
+        font-size: 50px;
+        font-weight: 900;
+        line-height: 0.8;
+        letter-spacing: -1px;
+      }
+      
+      .hero-text .red {
+        font-size: 85px;
+        letter-spacing: -2px;
+        color: #de041c;
+      }
+
+      .hero-text p {
+        font-size: 14px;
+     }
+
     .video-section {
         padding: 10px;
         text-align: center;
@@ -239,6 +256,6 @@ body {
         width: 50%;
         padding: 0;
         flex-shrink: 0; 
-        margin-top: 375px;
+        margin-top: 428px;
       }
   }
