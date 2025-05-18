@@ -1,0 +1,93 @@
+@media screen and (min-width: 768px) {
+    .collage {
+        width: 50%;
+        margin-top: 11rem;
+        display: grid;
+        gap: 5px;
+        z-index: -2;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+
+        grid-template-areas: 
+        '.. .. .. .. ..'
+        '.. .. .. .. ..'
+        'one one one .. ..'
+        'one one one four four'
+        'one one one four four'
+        'two three three five ..'
+        'two three three five ..'
+        'two three three .. ..';
+    }
+
+    .collage > div {
+        overflow: hidden;
+    }
+
+    .collage img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .collage :nth-child(1) {
+        grid-area: one;
+    }
+    .collage :nth-child(2) {
+        grid-area: two;
+    }
+    .collage :nth-child(3) {
+        grid-area: three;
+    }
+    .collage :nth-child(4) {
+        grid-area: four;
+    }
+    .collage :nth-child(5) {
+        grid-area: five;
+    }
+
+
+}
+
+@media screen and (min-width: 1440px) {
+    .collage {
+        width: 50%;
+        margin-top: 1.5rem;
+        display: grid;
+        gap: 5px;
+        z-index: -2;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+
+        grid-template-areas: 
+        '.. .. .. .. ..'
+        '.. .. .. .. ..'
+        'one one one .. ..'
+        'one one one four four'
+        'one one one four four'
+        'two three three five ..'
+        'two three three five ..'
+        'two three three .. ..';
+    }
+}    
+
+@media screen and (min-width: 1920px) {
+    .collage {
+        width: 50%;
+        margin-top: -2rem;
+        display: grid;
+        gap: 5px;
+        z-index: -2;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+
+        grid-template-areas: 
+        '.. .. .. .. ..'
+        '.. .. .. .. ..'
+        'one one one .. ..'
+        'one one one four four'
+        'one one one four four'
+        'two three three five ..'
+        'two three three five ..'
+        'two three three .. ..';
+    }
+}
