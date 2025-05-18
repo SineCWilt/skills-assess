@@ -116,7 +116,7 @@ body {
     width: 100%;
     padding-left: 0.5rem;
     flex-shrink: 0; 
-    /* margin-top: 237px; */
+    margin-top: 137px;
   }
   
 .splash {
@@ -211,10 +211,10 @@ body {
 
   .splash {
     /* outline: 2px dashed purple; */
-    width: 100%;
+    width: 70%;
     height: auto;
-    /* margin-left: 10px; */
-    margin-top: -471px;
+    margin-left: 229px;
+    margin-top: -359px;
     opacity: 0.1;
     z-index: -1;
 }
