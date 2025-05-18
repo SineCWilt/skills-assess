@@ -173,7 +173,7 @@ body {
         width: 50%;
         padding: 0;
         flex-shrink: 0; 
-        margin-top: 375px;
+        margin-top: 416px;
       }
 
   .splash {
@@ -181,7 +181,7 @@ body {
     width: 100%;
     height: auto;
     /* margin-left: 10px; */
-    margin-top: -570px;
+    margin-top: -471px;
     opacity: 0.1;
     z-index: -1;
 }
@@ -206,7 +206,7 @@ body {
         width: 50%;
         padding: 0;
         flex-shrink: 0; 
-        margin-top: 403px;
+        margin-top: 416px;
       }
 
   .splash {
@@ -214,7 +214,7 @@ body {
     width: 100%;
     height: auto;
     /* margin-left: 10px; */
-    margin-top: -570px;
+    margin-top: -471px;
     opacity: 0.1;
     z-index: -1;
 }
